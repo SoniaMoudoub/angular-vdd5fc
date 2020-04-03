@@ -10,13 +10,13 @@
    <p *ngIf="book.description">
     Description: {{ book.description }}
   </p>
-    <button (click)="share()">
-    Rent
-  </button>
-  
-<app-product-alerts
-  [book]="books">
-</app-product-alerts>
+<button (click)="share()">
+  Share
+</button>
+
+<app-book-alerts
+  [book]="book">
+</app-book-alerts>
   
 
 </div>

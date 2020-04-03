@@ -8,13 +8,14 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { BookAlertsComponent } from './book-alerts/book-alerts.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule,    RouterModule.forRoot([
       { path: '', component: BookListComponent },
     ]) ],
-  declarations: [ AppComponent, TopBarComponent, BookListComponent, ProductAlertsComponent,],
+  declarations: [ AppComponent, TopBarComponent, BookListComponent, ProductAlertsComponent, BookAlertsComponent,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
