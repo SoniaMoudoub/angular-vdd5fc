@@ -1,0 +1,25 @@
+<h2>Books</h2>
+
+<div *ngFor="let book of books">
+
+  <h3>
+      <a [title]="book.name + ' details'">
+      {{ book.name }}
+       </a>
+  </h3>
+   <p *ngIf="book.description">
+    Description: {{ book.description }}
+  </p>
+    <button (click)="share()">
+    Rent
+  </button>
+  
+<app-product-alerts
+  [book]="books">
+</app-product-alerts>
+  
+
+</div>
+
+
+
